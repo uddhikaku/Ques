@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<script type="text/javascript">
+		
+		function addMarks(pecentage){
+			this.marks=pecentage;
+		}
+
+		function student(id){
+			this.id=id;
+			this.addMarks=addMarks;
+		}
+	</script>
+</head>
+<body>
+
+	<script type="text/javascript">
+		var astudent = new student("ICT040");
+		astudent.addMarks(100);
+		document.write("student id is ",astudent.id,"<br>","student marks is:",astudent.marks); 
+
+	</script>
+
+</body>
+</html>
